@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './scss/index.css';
 import './scss/landing.css';
 import {LogoNav, Nav}from './js/nav_comp';
-import Landing from './js/landing_pg';
+import {Landing} from './js/landing_pg';
 import reportWebVitals from './reportWebVitals';
 
 

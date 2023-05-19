@@ -1,23 +1,50 @@
 import img_landing from '../assets/imgs/img_landing';
+import { Provider } from 'react-redux';
+import { configureStore } from 'redux';
 
-function Landing(){
+export function Landing(){
   console.log(img_landing[0]);
   return (
-      <figure id="landingFigure">
-        <img src={img_landing[0]} alt=""></img>
-      </figure>
+      <Figure></Figure>
   )
 }
 
-function Figure(){
+export function Figure(){
   return (
-    <figure id="landingFigure">
-        <img src={img_landing[0]} alt=""></img>
-      </figure>
+    <section>
+      <figure id="landingFigure">
+          <img src={img_landing[0]} alt=""></img>
+        </figure>
+      <button>
+        Change Character
+      </button>
+    </section>
   )
 }
 
+function myAction (){
+  const store = configureStore(reducer);
+  
 
+  
+  const initialState = {
+    img: img_landing[0]
+  };
+  
+  function reducer(state = initialState, action) {
+    switch(action.type) {
+      case 'INCREMENT':
+        return { img: state.img + action.img };
+      default:
+        return state;
+    }
+  }
+  function changeCharacter(char){
+    return {
+      type: "CHANGE_CHARACTER",
+      payload: char
+    }
+  }
 
-
-export default Landing;
+  
+}
