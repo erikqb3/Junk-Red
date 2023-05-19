@@ -9,4 +9,15 @@ function Landing(){
   )
 }
 
+function Figure(){
+  return (
+    <figure id="landingFigure">
+        <img src={img_landing[0]} alt=""></img>
+      </figure>
+  )
+}
+
+
+
+
 export default Landing;

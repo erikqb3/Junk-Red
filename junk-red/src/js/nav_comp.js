@@ -1,9 +1,14 @@
 import imgArray from '../assets/imgs/img_index';
+import { helperFunctions } from './helperFunctions';
 
-function LogoNav(){
+const pageList = ["characterDesign","video","about"]
+let pathAdjuster = helperFunctions.getPathAdjuster(pageList);
+console.log(pathAdjuster);
+
+export function LogoNav(){
   console.log(imgArray[0]);
   return (
-    <a href="https://youtube.com">
+    <a href={pathAdjuster[0]}>
       <figure>
         <img src={imgArray[0]} alt=""></img>
       </figure>
@@ -11,4 +16,9 @@ function LogoNav(){
   )
 }
 
-export default LogoNav;
+export function Nav(){
+  const pageList = ["characterDesign","video","about"]
+  const options = pageList.map((opt, index) => <li key={index}><a href={pathAdjuster[1]+opt+".html"}>{opt}</a></li>);
+  const ul = <ul>{options}</ul>
+  return (ul);
+}
