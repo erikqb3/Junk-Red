@@ -1,0 +1,23 @@
+//IMPORTS
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+//VARIABLES+MIXINS
+
+@media only all and (min-width: 0) {
+  figure#landingFigure{
+    img{
+      width: 100%;
+    }
+  }
+}
+@media only all and (min-width: 760px) {
+}
+@media only all and (min-width: 992px) {
+}
+@media only all and (min-width: 1200px) {
+}

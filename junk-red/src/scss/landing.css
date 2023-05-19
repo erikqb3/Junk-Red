@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only all and (min-width: 0) {
+  figure#landingFigure img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=landing.css.map */
