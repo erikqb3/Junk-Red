@@ -4,8 +4,9 @@ import green from "./green.png"
 import yellow from "./yellow.png"
 import orange from "./orange.png"
 import dark from "./dark.png"
+import video from "../video.mp4"
 
-const img_landing = [
+export const img_landing = [
   purple,
   blue,
   green,
@@ -14,4 +15,4 @@ const img_landing = [
   dark,
 ]
 
-export default img_landing;
+export const videoInRibbon = video;

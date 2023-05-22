@@ -1,6 +1,6 @@
-import img_landing from '../assets/imgs/img_landing';
+import {img_landing, videoInRibbon} from '../assets/imgs/img_landing';
 import { Provider } from 'react-redux';
-import { configureStore } from 'redux';
+// import { configureStore } from 'redux';
 
 export function Landing(){
   console.log(img_landing[0]);
@@ -15,15 +15,15 @@ export function Figure(){
       <figure id="landingFigure">
           <img src={img_landing[0]} alt=""></img>
         </figure>
-      <button>
+      {/* <button>
         Change Character
-      </button>
+      </button> */}
     </section>
   )
 }
 
 function myAction (){
-  const store = configureStore(reducer);
+  // const store = configureStore(reducer);
   
 
   

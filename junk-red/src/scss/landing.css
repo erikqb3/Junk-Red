@@ -5,7 +5,203 @@
 }
 
 @media only all and (min-width: 0) {
-  figure#landingFigure img {
+  body {
     width: 100%;
+    min-height: 100vh;
+    background: rgb(39, 22, 33);
+    background: linear-gradient(360deg, rgb(39, 22, 33) 25%, rgb(146, 70, 105) 100%);
+  }
+  main a#logoNav {
+    position: absolute;
+    top: 0;
+  }
+  main div#ribbon {
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
+  main div#ribbon video {
+    width: 175%;
+    filter: grayscale(100%);
+    opacity: 0.25;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only all and (min-width: 0) {
+  main section {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main section figure#landingFigure {
+    z-index: 1;
+    width: 100vw;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  main section figure#landingFigure img {
+    width: 100%;
+  }
+  main ul {
+    position: absolute;
+    z-index: 2;
+    bottom: 2.5rem;
+    width: 100%;
+  }
+  main ul li.button_A {
+    list-style: none;
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+  main ul li.button_A a:link, main ul li.button_A a:visited {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(37, 9, 68, 0.9);
+    border: 5px solid rgba(96, 9, 118, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  main ul li.button_A a:link:hover, main ul li.button_A a:link:active, main ul li.button_A a:link:focus, main ul li.button_A a:visited:hover, main ul li.button_A a:visited:active, main ul li.button_A a:visited:focus {
+    background-color: rgba(118, 9, 83, 0.9);
+    border: 5px solid rgba(235, 4, 131, 0.9);
+  }
+}
+@media only all and (min-width: 760px) {
+  main section figure#landingFigure {
+    z-index: 1;
+    max-width: 30rem;
+    margin: 0 0 0 auto;
+  }
+  main section figure#landingFigure img {
+    width: 100%;
+  }
+  main ul {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+  }
+  main ul li.button_A {
+    list-style: none;
+    width: 40%;
+    margin: 1.5rem auto;
+    justify-content: flex-start;
+    margin: 1.5rem auto 1.5rem 4rem;
+    font-size: 2rem;
+    transition: all 0.5s;
+  }
+  main ul li.button_A a:link, main ul li.button_A a:visited {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(37, 9, 68, 0.9);
+    border: 5px solid rgba(96, 9, 118, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  main ul li.button_A a:link:hover, main ul li.button_A a:link:active, main ul li.button_A a:link:focus, main ul li.button_A a:visited:hover, main ul li.button_A a:visited:active, main ul li.button_A a:visited:focus {
+    background-color: rgba(118, 9, 83, 0.9);
+    border: 5px solid rgba(235, 4, 131, 0.9);
+  }
+  main ul li.button_A:hover, main ul li.button_A:active, main ul li.button_A:focus {
+    margin-left: 7.5rem;
+  }
+}
+@media only all and (min-width: 992px) {
+  main section figure#landingFigure {
+    z-index: 1;
+    max-width: 40rem;
+    margin: 15rem -5rem 0 auto;
+  }
+  main section figure#landingFigure img {
+    width: 100%;
+  }
+  main ul {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+  }
+  main ul li.button_A {
+    list-style: none;
+    width: 40%;
+    margin: 1.5rem auto;
+    justify-content: flex-start;
+    margin: 1.5rem auto 1.5rem 4rem;
+    font-size: 2rem;
+  }
+  main ul li.button_A a:link, main ul li.button_A a:visited {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(37, 9, 68, 0.9);
+    border: 5px solid rgba(96, 9, 118, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  main ul li.button_A a:link:hover, main ul li.button_A a:link:active, main ul li.button_A a:link:focus, main ul li.button_A a:visited:hover, main ul li.button_A a:visited:active, main ul li.button_A a:visited:focus {
+    background-color: rgba(118, 9, 83, 0.9);
+    border: 5px solid rgba(235, 4, 131, 0.9);
+  }
+}
+@media only all and (min-width: 1200px) {
+  main section figure#landingFigure {
+    z-index: 1;
+    max-width: 80rem;
+    margin: 40rem -15rem 0 auto;
+  }
+  main section figure#landingFigure img {
+    width: 100%;
+  }
+  main ul {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+  }
+  main ul li.button_A {
+    list-style: none;
+    width: 40%;
+    margin: 1.5rem auto;
+    justify-content: flex-start;
+    margin: 1.5rem auto 1.5rem 4rem;
+    font-size: 2rem;
+  }
+  main ul li.button_A a:link, main ul li.button_A a:visited {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(37, 9, 68, 0.9);
+    border: 5px solid rgba(96, 9, 118, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  main ul li.button_A a:link:hover, main ul li.button_A a:link:active, main ul li.button_A a:link:focus, main ul li.button_A a:visited:hover, main ul li.button_A a:visited:active, main ul li.button_A a:visited:focus {
+    background-color: rgba(118, 9, 83, 0.9);
+    border: 5px solid rgba(235, 4, 131, 0.9);
   }
 }/*# sourceMappingURL=landing.css.map */

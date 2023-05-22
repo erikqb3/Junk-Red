@@ -1,4 +1,6 @@
 //IMPORTS
+@import "index";
+
 
 *{
   margin:0;
@@ -9,15 +11,129 @@
 //VARIABLES+MIXINS
 
 @media only all and (min-width: 0) {
-  figure#landingFigure{
-    img{
+  main{
+    section{
+      height: 100vh;
+      overflow: hidden;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      figure#landingFigure{
+        z-index: 1;
+        width: 100vw;
+        max-width: 25rem;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    ul{
+      position: absolute;
+      z-index: 2;
+      bottom:2.5rem;
       width: 100%;
+      li.button_A{
+        @include button_A;
+        width: 75%;
+        margin: 1.5rem auto;
+        a:link, a:visited{
+        }
+      }
     }
   }
 }
 @media only all and (min-width: 760px) {
+  main{
+    section{
+      figure#landingFigure{
+        z-index: 1;
+        // width: 100%;
+        max-width: 30rem;
+        margin: 0 0 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    ul{
+      position: absolute;
+      bottom: 5rem;
+      width: 100%;
+      li.button_A{
+        @include button_A;
+        width: 40%;
+        margin: 1.5rem auto;
+        justify-content: flex-start;
+        margin: 1.5rem auto 1.5rem 4rem;
+        font-size: 2rem;
+        transition: all 0.5s;
+        a:link, a:visited{
+        }
+        &:hover, &:active, &:focus{
+          margin-left: 7.5rem;
+        }
+      }
+    }
+  }
 }
 @media only all and (min-width: 992px) {
+  main{
+    section{
+      figure#landingFigure{
+        z-index: 1;
+        // width: 100%;
+        max-width: 40rem;
+        margin: 15rem -5rem 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    ul{
+      position: absolute;
+      bottom: 5rem;
+      width: 100%;
+      li.button_A{
+        @include button_A;
+        width: 40%;
+        margin: 1.5rem auto;
+        justify-content: flex-start;
+        margin: 1.5rem auto 1.5rem 4rem;
+        font-size: 2rem;
+        a:link, a:visited{
+        }
+      }
+    }
+  }
 }
 @media only all and (min-width: 1200px) {
+  main{
+    section{
+      figure#landingFigure{
+        z-index: 1;
+        // width: 100%;
+        max-width: 80rem;
+        margin: 40rem -15rem 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    ul{
+      position: absolute;
+      bottom: 5rem;
+      width: 100%;
+      li.button_A{
+        @include button_A;
+        width: 40%;
+        margin: 1.5rem auto;
+        justify-content: flex-start;
+        margin: 1.5rem auto 1.5rem 4rem;
+        font-size: 2rem;
+        a:link, a:visited{
+        }
+      }
+    }
+  }
 }
