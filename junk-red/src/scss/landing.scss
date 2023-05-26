@@ -23,9 +23,60 @@
         width: 100vw;
         max-width: 25rem;
         margin: 0 auto;
+        position:relative;
         img{
           width: 100%;
+          position: absolute;
+          top:0;
+          bottom:0;
+          margin: auto 0;
+          // animation-name: fadeIn;
+          animation-duration:5s;
+          // animation-direction:alternate;
+          // animation-timing-function: ;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+          transition: opacity 5s;
         }
+        img#imgA{
+          // animation-name:fadeOut;
+        }
+        img#imgB{
+          // opacity:0;
+          // animation-name:fadeIn;
+        }
+        img.fadeOut{
+          opacity: 1;
+          // animation-name:fadeOut;
+        }
+        img.fadeIn{
+          opacity:0;
+          // animation-name:fadeIn;
+
+        }
+
+        @keyframes fadeOut{
+          0%{opacity:1}
+          50%{opacity:1}
+          100%{opacity:0}
+        }
+        @keyframes fadeIn{
+          0%{opacity:0}
+          50%{opacity:0}
+          100%{opacity:1}
+        }
+
+
+        // @keyframes fadeIn {
+        //   0%{opacity:0;}
+        //   50%{opacity: 1;}
+        //   100%{opacity: 1;}
+        // }
+        // @keyframes fadeOut{
+        //   0%{opacity:1;}
+        //   50%{opacity: 1;}
+        //   100%{opacity: 0;}
+        // }
       }
     }
     ul{
@@ -50,7 +101,7 @@
         z-index: 1;
         // width: 100%;
         max-width: 30rem;
-        margin: 0 0 0 auto;
+        margin: 0 -2.5rem 0 auto;
         img{
           width: 100%;
         }
