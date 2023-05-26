@@ -7,7 +7,7 @@ import { Home } from './TestPages/home';
 import { NoPage } from './TestPages/noPage';
 import { MyIndex } from './TestPages/myIndex';
 import {TestNav } from './TestPages/testNav';
-import './TestPages/myIndex.module.css'
+
 
 
 export default function App() {

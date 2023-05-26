@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import './about.module.css';
 
 
 export function About(){
   return (
-    <h1>ABOUT</h1>
+    <h1>ABOUT!</h1>
   )
 }
 

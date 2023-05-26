@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import "./noPage.module.css";
 
 import { Outlet, Link } from "react-router-dom";
 
