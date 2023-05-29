@@ -6,7 +6,9 @@ import './home.module.css'
 
 export function Home(){
   return (
-    <h1>Home</h1>
+    <section id="HomePage">
+      <h1>Home</h1>
+    </section>
   )
 }
 
